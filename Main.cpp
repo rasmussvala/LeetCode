@@ -1,4 +1,6 @@
 #include <iostream>
+#include <list>
+#include <map>
 #include <vector>
 
 using namespace std;
@@ -11,58 +13,50 @@ static int unicodeToIndex(int letter) {
   return letter - 97;
 }
 
+class Graph {
+ public:
+  map<int, bool> visited;
+  map<int, list<int> > adj;
+
+  // Function to add an edge to graph
+  void addEdge(int v, int w);
+
+  // DFS traversal of the vertices
+  // reachable from v
+  void DFS(int v);
+};
+
+void Graph::addEdge(int v, int w) {
+  // Add w to v’s list.
+  adj[v].push_back(w);
+}
+
+void Graph::DFS(int v) {
+  // Mark the current node as visited and
+  // print it
+  visited[v] = true;
+  cout << v << " ";
+
+  // Recur for all the vertices adjacent
+  // to this vertex
+  list<int>::iterator i;
+  for (i = adj[v].begin(); i != adj[v].end(); ++i)
+    if (!visited[*i]) DFS(*i);
+}
+
 static int foo(vector<string>& words, vector<char>& letters,
                vector<int>& score) {
-  vector<char> lettersCopy;
-  vector<char>::iterator it;
-  vector<pair<string, int>> accaptableWords;  // Word and score
-  vector<int> wordScore;
-  bool lettersExists;
+  Graph g{};
 
-  // Check if words are ok and add accaptable to vector
-  for (const auto& word : words) {
-    // Reset letters for every word
-    lettersCopy = letters;
-    lettersExists = true;
-
-    for (const auto& letter : word) {
-      it = find(lettersCopy.begin(), lettersCopy.end(), letter);
-
-      // Element was not found
-      if (it == lettersCopy.end()) {
-        lettersExists = false;
-        break;
-      }
-
-      // Remove the letter since "letter can only be used once"
-      auto index = it - lettersCopy.begin();
-      lettersCopy.erase(next(lettersCopy.begin(), index));
+  for (int i = 0; i < words.size(); i++) {
+    for (int j = 0; j < words.size(); j++) {
+      if (i != j) g.addEdge(i, j);
     }
-
-    if (lettersExists) accaptableWords.push_back(make_pair(word, 0));
   }
 
-  // No words accaptable words exists
-  if (accaptableWords.size() == 0) return 0;
+  g.DFS(1);
 
-  // Set scores to all words
-  for (auto& pair : accaptableWords) {
-    string word = pair.first;
-    int sum = 0;
-    for (const auto& letter : word) {
-      sum += score[unicodeToIndex(letter)];
-    }
-    // Update the score
-    pair.second = sum;
-  }
-
-  // Return the greatest word
-  auto ptrMaxPair = max_element(
-      accaptableWords.begin(), accaptableWords.end(),
-      [](const auto& lhs, const auto& rhs) { return lhs.second < rhs.second; });
-  ;
-  auto& maxPair = *ptrMaxPair;
-  return maxPair.second;
+  return 0;
 }
 
 int main() {
@@ -72,6 +66,5 @@ int main() {
                        0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
   int result = foo(words, letters, score);
 
-  int test = 'a' - 97;
   return 0;
 }
