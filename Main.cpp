@@ -24,6 +24,8 @@ class Graph {
   // DFS traversal of the vertices
   // reachable from v
   void DFS(int v);
+
+  void resetGraph();
 };
 
 void Graph::addEdge(int v, int w) {
@@ -44,17 +46,28 @@ void Graph::DFS(int v) {
     if (!visited[*i]) DFS(*i);
 }
 
+void Graph::resetGraph() {
+  for (auto& node : visited) {
+    node.second = false;
+  }
+}
+
 static int foo(vector<string>& words, vector<char>& letters,
                vector<int>& score) {
-  Graph g{};
+  Graph g;
 
+  // Add all edges
   for (int i = 0; i < words.size(); i++) {
     for (int j = 0; j < words.size(); j++) {
       if (i != j) g.addEdge(i, j);
     }
   }
 
-  g.DFS(1);
+  // Run all cases
+  for (int i = 0; i < words.size(); i++) {
+    g.DFS(i);
+    g.resetGraph();
+  }
 
   return 0;
 }
