@@ -2,10 +2,32 @@
 
 using namespace std;
 
-static int foo() { return 0; }
+static bool foo(string s) {
+  int n = s.length();
+  int appearances;
+
+  // We only need to loop through half s to create a substring
+  for (int i = 1; i <= n / 2; ++i) {
+    // String can be divided evenly with substring
+    if (n % i == 0) {
+      string substring = s.substr(0, i);
+      string result = "";
+      appearances = n / i;
+
+      // Recreate possible result
+      for (int j = 0; j < appearances; ++j) {
+        result += substring;
+      }
+
+      // They match
+      if (result == s) return true;
+    }
+  }
+  return false;
+}
 
 int main() {
-  int result = foo();
-
+  string s = "a";
+  bool result = foo(s);
   return 0;
 }
