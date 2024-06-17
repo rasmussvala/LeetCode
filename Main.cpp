@@ -4,13 +4,22 @@
 using namespace std;
 
 static void foo(vector<int>& nums) {
-  for (int i = 0; i < nums.size() - 1; i++) {
-    // Move to the end
-    if (nums[i] == 0) {
-      for (int j = i; j < nums.size() - 1; j++) {
-        swap(nums[j], nums[j + 1]);
-      }
-    }
+  int counter = 0;
+
+  // Find number of zero occurances
+  for (const auto& n : nums) {
+    if (n == 0) ++counter;
+  }
+
+  // Remove all zeros
+  // Note: std::remove moves the elements that should be "removed" to the end
+  // and returns an iterator to the new logical end of the container. Then we
+  // call erase to actually remove those elements.
+  nums.erase(remove(nums.begin(), nums.end(), 0), nums.end());
+
+  // Add all zeros in the end
+  for (int i = 0; i < counter; i++) {
+    nums.push_back(0);
   }
 }
 
