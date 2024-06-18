@@ -1,0 +1,4 @@
+Problem							Status			Date
+1255. Maximum Score Words Formed by Letters		WIP			2024-06-14
+459. Repeated Substring Pattern				Accepted	 	2024-06-15
+283. Move Zeroes					Accepted		2024-06-17
