@@ -2,10 +2,23 @@
 
 using namespace std;
 
-static int foo() { return 0; }
+static string foo(string s) {
+  string result = "";
+
+  for (auto& l : s) {
+    if (l <= 90 && l >= 65) {
+      // Lower case are 32 steps higher in ASCII
+      l += 32;
+    }
+    result += l;
+  }
+
+  return result;
+}
 
 int main() {
-  int result = foo();
+  string s = "Hello";
+  string result = foo(s);
 
   return 0;
 }
