@@ -1,11 +1,20 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-static int foo() { return 0; }
+static bool foo(vector<int>& arr) {
+  // Create the possible arrays
+
+  // check if the differance
+  //
+
+  return false;
+}
 
 int main() {
-  int result = foo();
+  vector<int> myVec = {3, 5, 1};
+  bool result = foo(myVec);
 
   return 0;
 }
