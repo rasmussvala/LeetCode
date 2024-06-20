@@ -4,3 +4,5 @@ Problem							Status			Date
 283. Move Zeroes					Accepted		2024-06-17
 1822. Sign of the Product of an Array			Accepted		2024-06-18
 509. Fibonacci Number					Accepted		2024-06-19
+709. To Lower Case					Accepted		2024-06-20
+1502. Can Make Arithmetic Progression From Sequence	WIP			2024-06-20
