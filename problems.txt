@@ -7,3 +7,4 @@ Problem							Status			Date
 709. To Lower Case					Accepted		2024-06-20
 1502. Can Make Arithmetic Progression From Sequence	WIP			2024-06-20
 58. Length of Last Word					Accepted		2024-06-21 
+1523. Count Odd Numbers in a Interval Range		Accepted		2024-06-22
