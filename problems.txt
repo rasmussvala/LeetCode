@@ -11,3 +11,4 @@ Problem							Status			Date
 1572. Matrix Diagonal Sum				Accepted		2024-06-23
 682. Baseball Game					Accepted		2024-06-24
 3110. Score of a String					Accepted		2024-06-25
+3146. Permutation Difference between Two Strings	WIP			2024-06-26
