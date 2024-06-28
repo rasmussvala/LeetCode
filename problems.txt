@@ -12,3 +12,4 @@ Problem							Status			Date
 682. Baseball Game					Accepted		2024-06-24
 3110. Score of a String					Accepted		2024-06-25
 3146. Permutation Difference between Two Strings	Accepted		2024-06-27
+2469. Convert the Temperature				Accepted		2024-06-28
