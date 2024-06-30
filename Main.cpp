@@ -1,15 +1,21 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
 static bool foo(vector<int>& arr) {
-  // Create the possible arrays
+  sort(arr.begin(), arr.end());
 
-  // check if the differance
-  //
+  int diff = arr[0] - arr[1];
+  int nextDiff = 0;
 
-  return false;
+  for (size_t i = 1; i < arr.size() - 1; ++i) {
+    nextDiff = arr[i] - arr[i + 1];
+    if (nextDiff != diff) return false;
+  }
+
+  return true;
 }
 
 int main() {
