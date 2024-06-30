@@ -5,7 +5,6 @@ Problem							Status			Date
 1822. Sign of the Product of an Array			Accepted		2024-06-18
 509. Fibonacci Number					Accepted		2024-06-19
 709. To Lower Case					Accepted		2024-06-20
-1502. Can Make Arithmetic Progression From Sequence	WIP			2024-06-20
 58. Length of Last Word					Accepted		2024-06-21 
 1523. Count Odd Numbers in a Interval Range		Accepted		2024-06-22
 1572. Matrix Diagonal Sum				Accepted		2024-06-23
@@ -14,3 +13,4 @@ Problem							Status			Date
 3146. Permutation Difference between Two Strings	Accepted		2024-06-27
 2469. Convert the Temperature				Accepted		2024-06-28
 13. Roman to Integer					Accepted		2024-06-29
+1502. Can Make Arithmetic Progression From Sequence	Accepted		2024-06-30
