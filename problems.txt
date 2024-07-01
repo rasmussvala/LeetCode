@@ -14,3 +14,4 @@ Problem							Status			Date
 2469. Convert the Temperature				Accepted		2024-06-28
 13. Roman to Integer					Accepted		2024-06-29
 1502. Can Make Arithmetic Progression From Sequence	Accepted		2024-06-30
+1550. Three Consecutive Odds				Accepted		2024-07-01
