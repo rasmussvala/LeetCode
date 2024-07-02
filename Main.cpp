@@ -2,12 +2,12 @@
 
 using namespace std;
 
+// DisjSet class copied from GeeksfromGeeks:
+// https://www.geeksforgeeks.org/introduction-to-disjoint-set-data-structure-or-union-find-algorithm/
 class DisjSet {
   int *rank, *parent, n;
 
  public:
-  // Constructor to create and
-  // initialize sets of n items
   DisjSet(int n) {
     rank = new int[n];
     parent = new int[n];
@@ -15,62 +15,49 @@ class DisjSet {
     makeSet();
   }
 
-  // Creates n single item sets
   void makeSet() {
     for (int i = 0; i < n; i++) {
       parent[i] = i;
     }
   }
 
-  // Finds set of given item x
   int find(int x) {
-    // Finds the representative of the set
-    // that x is an element of
-    if (parent[x] != x) {
-      // if x is not the parent of itself
-      // Then x is not the representative of
-      // his set,
-      parent[x] = find(parent[x]);
-
-      // so we recursively call Find on its parent
-      // and move i's node directly under the
-      // representative of this set
-    }
+    if (parent[x] != x) parent[x] = find(parent[x]);
 
     return parent[x];
   }
 
-  // Do union of two sets by rank represented
-  // by x and y.
   void Union(int x, int y) {
-    // Find current sets of x and y
     int xset = find(x);
     int yset = find(y);
 
-    // If they are already in same set
     if (xset == yset) return;
 
-    // Put smaller ranked item under
-    // bigger ranked item if ranks are
-    // different
-    if (rank[xset] < rank[yset]) {
+    // Modification from original code to make the smallest set be the parent
+    if (xset > yset) {
       parent[xset] = yset;
-    } else if (rank[xset] > rank[yset]) {
+    } else if (xset < yset) {
       parent[yset] = xset;
     }
 
-    // If ranks are same, then increment
-    // rank.
     else {
       parent[yset] = xset;
-      rank[xset] = rank[xset] + 1;
+      xset = xset + 1;
     }
   }
 };
 
 static string foo(string s1, string s2, string baseStr) {
-  // do something
-  return "";
+  int n = 26;  // Since there are 26 letters in the English alphabet
+  DisjSet set(n);
+
+  for (size_t i = 0; i < s1.size(); ++i) set.Union(s1[i] - 'a', s2[i] - 'a');
+
+  string result = "";
+  for (size_t i = 0; i < baseStr.size(); i++)
+    result += set.find(baseStr[i] - 'a') + 'a';
+
+  return result;
 }
 
 int main() {
