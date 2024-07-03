@@ -1,5 +1,4 @@
 Problem										Status			Date
-1255. Maximum Score Words Formed by Letters					WIP			2024-06-14
 459. Repeated Substring Pattern							Accepted	 	2024-06-15
 283. Move Zeroes								Accepted		2024-06-17
 1822. Sign of the Product of an Array						Accepted		2024-06-18
@@ -18,3 +17,4 @@ Problem										Status			Date
 350. Intersection of Two Arrays II						Accepted		2024-07-02
 1061. Lexicographically Smallest Equivalent String				Accepted		2024-07-02
 1509. Minimum Difference Between Largest and Smallest Value in Three Moves	Accepted		2024-07-03
+1255. Maximum Score Words Formed by Letters					Accepted		2024-07-03
