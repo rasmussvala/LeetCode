@@ -1,19 +1,20 @@
-Problem							Status			Date
-1255. Maximum Score Words Formed by Letters		WIP			2024-06-14
-459. Repeated Substring Pattern				Accepted	 	2024-06-15
-283. Move Zeroes					Accepted		2024-06-17
-1822. Sign of the Product of an Array			Accepted		2024-06-18
-509. Fibonacci Number					Accepted		2024-06-19
-709. To Lower Case					Accepted		2024-06-20
-58. Length of Last Word					Accepted		2024-06-21 
-1523. Count Odd Numbers in a Interval Range		Accepted		2024-06-22
-1572. Matrix Diagonal Sum				Accepted		2024-06-23
-682. Baseball Game					Accepted		2024-06-24
-3110. Score of a String					Accepted		2024-06-25
-3146. Permutation Difference between Two Strings	Accepted		2024-06-27
-2469. Convert the Temperature				Accepted		2024-06-28
-13. Roman to Integer					Accepted		2024-06-29
-1502. Can Make Arithmetic Progression From Sequence	Accepted		2024-06-30
-1550. Three Consecutive Odds				Accepted		2024-07-01
-350. Intersection of Two Arrays II			Accepted		2024-07-02
-1061. Lexicographically Smallest Equivalent String	Accepted		2024-07-02
+Problem										Status			Date
+1255. Maximum Score Words Formed by Letters					WIP			2024-06-14
+459. Repeated Substring Pattern							Accepted	 	2024-06-15
+283. Move Zeroes								Accepted		2024-06-17
+1822. Sign of the Product of an Array						Accepted		2024-06-18
+509. Fibonacci Number								Accepted		2024-06-19
+709. To Lower Case								Accepted		2024-06-20
+58. Length of Last Word								Accepted		2024-06-21 
+1523. Count Odd Numbers in a Interval Range					Accepted		2024-06-22
+1572. Matrix Diagonal Sum							Accepted		2024-06-23
+682. Baseball Game								Accepted		2024-06-24
+3110. Score of a String								Accepted		2024-06-25
+3146. Permutation Difference between Two Strings				Accepted		2024-06-27
+2469. Convert the Temperature							Accepted		2024-06-28
+13. Roman to Integer								Accepted		2024-06-29
+1502. Can Make Arithmetic Progression From Sequence				Accepted		2024-06-30
+1550. Three Consecutive Odds							Accepted		2024-07-01
+350. Intersection of Two Arrays II						Accepted		2024-07-02
+1061. Lexicographically Smallest Equivalent String				Accepted		2024-07-02
+1509. Minimum Difference Between Largest and Smallest Value in Three Moves	Accepted		2024-07-03
