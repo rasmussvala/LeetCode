@@ -1,75 +1,52 @@
+#include <functional>
 #include <iostream>
-#include <list>
-#include <map>
+#include <unordered_map>
 #include <vector>
 
 using namespace std;
 
-static int unicodeToIndex(int letter) {
-  // Unicode for Latin Alphabet Lowercase:
-  // a = 97, b = 98, c = 99...  =>
-  // -97                        =>
-  // a = 0, b = 1, c = 2...
-  return letter - 97;
-}
-
-class Graph {
- public:
-  map<int, bool> visited;
-  map<int, list<int> > adj;
-
-  // Function to add an edge to graph
-  void addEdge(int v, int w);
-
-  // DFS traversal of the vertices
-  // reachable from v
-  void DFS(int v);
-
-  void resetGraph();
-};
-
-void Graph::addEdge(int v, int w) {
-  // Add w to v’s list.
-  adj[v].push_back(w);
-}
-
-void Graph::DFS(int v) {
-  // Mark the current node as visited and
-  // print it
-  visited[v] = true;
-  cout << v << " ";
-
-  // Recur for all the vertices adjacent
-  // to this vertex
-  list<int>::iterator i;
-  for (i = adj[v].begin(); i != adj[v].end(); ++i)
-    if (!visited[*i]) DFS(*i);
-}
-
-void Graph::resetGraph() {
-  for (auto& node : visited) {
-    node.second = false;
-  }
-}
-
 static int foo(vector<string>& words, vector<char>& letters,
                vector<int>& score) {
-  Graph g;
-
-  // Add all edges
-  for (int i = 0; i < words.size(); i++) {
-    for (int j = 0; j < words.size(); j++) {
-      if (i != j) g.addEdge(i, j);
-    }
+  // Save how many letters we have in a map
+  unordered_map<char, int> lettersCounter;
+  for (char letter : letters) {
+    lettersCounter[letter]++;
   }
 
-  // Run all cases
-  for (int i = 0; i < words.size(); i++) {
-    g.DFS(i);
-    g.resetGraph();
-  }
+  int totalScore = 0;
 
-  return 0;
+  // Recursive function to explore combinations of words to maximize score
+  function<void(int, unordered_map<char, int>, int)> explore =
+      [&](int index, unordered_map<char, int> letterCounter, int currScore) {
+        totalScore = max(totalScore, currScore);
+        if (index == words.size()) return;
+
+        // Loop through the rest of the words and se if they are valid
+        for (int i = index; i < words.size(); ++i) {
+          unordered_map<char, int> tmpCounter = letterCounter;
+          string word = words[i];
+          int wordScore = 0;
+          bool isValid = true;
+
+          for (char ch : word) {
+            if (tmpCounter[ch] > 0) {
+              tmpCounter[ch]--;
+              wordScore += score[ch - 'a'];
+            } else {
+              isValid = false;
+              break;
+            }
+          }
+
+          // If the word was valid, we try to create even more words
+          if (isValid) {
+            explore(i + 1, tmpCounter, currScore + wordScore);
+          }
+        }
+      };
+
+  explore(0, lettersCounter, 0);
+  return totalScore;
 }
 
 int main() {
