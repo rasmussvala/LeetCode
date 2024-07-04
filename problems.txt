@@ -18,3 +18,4 @@ Problem										Status			Date
 1061. Lexicographically Smallest Equivalent String				Accepted		2024-07-02
 1509. Minimum Difference Between Largest and Smallest Value in Three Moves	Accepted		2024-07-03
 1255. Maximum Score Words Formed by Letters					Accepted		2024-07-03
+2181. Merge Nodes in Between Zeros						Accepted		2024-07-04
