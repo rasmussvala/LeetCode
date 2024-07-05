@@ -19,3 +19,4 @@ Problem										Status			Date
 1509. Minimum Difference Between Largest and Smallest Value in Three Moves	Accepted		2024-07-03
 1255. Maximum Score Words Formed by Letters					Accepted		2024-07-03
 2181. Merge Nodes in Between Zeros						Accepted		2024-07-04
+2058. Find the Minimum and Maximum Number of Nodes Between Critical Points	Accepted		2024-07-05
