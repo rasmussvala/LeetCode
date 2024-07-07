@@ -21,3 +21,4 @@ Problem										Status			Date
 2181. Merge Nodes in Between Zeros						Accepted		2024-07-04
 2058. Find the Minimum and Maximum Number of Nodes Between Critical Points	Accepted		2024-07-05
 2582. Pass the Pillow								Accepted		2024-07-06
+1518. Water Bottles								Accepted		2024-07-07
