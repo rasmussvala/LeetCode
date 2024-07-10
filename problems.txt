@@ -24,3 +24,4 @@ Problem										Status			Date
 1518. Water Bottles								Accepted		2024-07-07
 1823. Find the Winner of the Circular Game					Accepted		2024-07-08
 1701. Average Waiting Time							Accepted		2024-07-09
+1598. Crawler Log Folder							Accepted		2024-07-10
