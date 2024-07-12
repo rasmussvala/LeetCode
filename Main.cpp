@@ -2,15 +2,27 @@
 
 using namespace std;
 
-static int removeSubstring(string& s, string remove, int points) {
+static int removeSubstring(string& inputString, string targetSubstring,
+                           int pointsPerRemoval) {
   int totalPoints = 0;
-  size_t found = s.find(remove);
+  int writeIndex = 0;
 
-  while (found != string::npos) {
-    s.erase(s.begin() + found, s.begin() + found + 2);
-    totalPoints += points;
-    found = s.find(remove);
+  // Iterate through the string
+  for (int readIndex = 0; readIndex < inputString.size(); readIndex++) {
+    // Add the current character
+    inputString[writeIndex++] = inputString[readIndex];
+
+    // Check if we've written at least two characters and
+    // they match the target substring
+    if (writeIndex > 1 && inputString[writeIndex - 2] == targetSubstring[0] &&
+        inputString[writeIndex - 1] == targetSubstring[1]) {
+      writeIndex -= 2;  // Move write index back to remove the match
+      totalPoints += pointsPerRemoval;
+    }
   }
+
+  // Trim the string to remove any leftover characters
+  inputString.erase(inputString.begin() + writeIndex, inputString.end());
 
   return totalPoints;
 }
