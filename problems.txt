@@ -35,3 +35,4 @@ Problem										Status			Date
 2894. Divisible and Non-divisible Sums Difference				Accepted		2024-07-15
 771. Jewels and Stones								Accepted		2024-07-15
 1470. Shuffle the Array								Accepted		2024-07-15
+2413. Smallest Even Multiple							Accepted		2024-07-16
