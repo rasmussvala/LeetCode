@@ -28,11 +28,14 @@ Problem										Status			Date
 1190. Reverse Substrings Between Each Pair of Parentheses			Accepted		2024-07-11
 1717. Maximum Score From Removing Substrings					Accepted		2024-07-12
 2751. Robot Collisions (time exceeds with my solution)				Accepted		2024-07-13
-3190. Find Minimum Operations to Make All Elements Divisible by Three		Accepted		2024-07-14
-2011. Final Value of Variable After Performing Operations			Accepted		2024-07-15
-1108. Defanging an IP Address							Accepted		2024-07-15
-1512. Number of Good Pairs							Accepted		2024-07-15
-2894. Divisible and Non-divisible Sums Difference				Accepted		2024-07-15
-771. Jewels and Stones								Accepted		2024-07-15
-1470. Shuffle the Array								Accepted		2024-07-15
-2413. Smallest Even Multiple							Accepted		2024-07-16
+3190. Find Minimum Operations to Make All Elements Divisible by Three*		Accepted		2024-07-14
+2011. Final Value of Variable After Performing Operations*			Accepted		2024-07-15
+1108. Defanging an IP Address*							Accepted		2024-07-15
+1512. Number of Good Pairs*							Accepted		2024-07-15
+2894. Divisible and Non-divisible Sums Difference*				Accepted		2024-07-15
+771. Jewels and Stones*								Accepted		2024-07-15
+1470. Shuffle the Array*							Accepted		2024-07-15
+2413. Smallest Even Multiple*							Accepted		2024-07-16
+1071. Greatest Common Divisor of Strings*					Accepted		2024-07-17
+
+*: Solution only at leetcode.com
