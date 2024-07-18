@@ -37,5 +37,6 @@ Problem										Status			Date
 1470. Shuffle the Array*							Accepted		2024-07-15
 2413. Smallest Even Multiple*							Accepted		2024-07-16
 1071. Greatest Common Divisor of Strings*					Accepted		2024-07-17
+1491. Average Salary Excluding the Minimum and Maximum Salary*			Accepted		2024-07-18
 
 *: Solution only at leetcode.com
