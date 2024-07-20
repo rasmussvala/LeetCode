@@ -38,5 +38,7 @@ Problem										Status			Date
 2413. Smallest Even Multiple*							Accepted		2024-07-16
 1071. Greatest Common Divisor of Strings*					Accepted		2024-07-17
 1491. Average Salary Excluding the Minimum and Maximum Salary*			Accepted		2024-07-18
+1431. Kids With the Greatest Number of Candies*					Accepted		2024-07-19
+605. Can Place Flowers								Accepted		2024-07-20
 
 *: Solution only at leetcode.com
