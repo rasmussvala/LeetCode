@@ -40,5 +40,6 @@ Problem										Status			Date
 1491. Average Salary Excluding the Minimum and Maximum Salary*			Accepted		2024-07-18
 1431. Kids With the Greatest Number of Candies*					Accepted		2024-07-19
 605. Can Place Flowers								Accepted		2024-07-20
+345. Reverse Vowels of a String							Accepted		2024-07-21
 
 *: Solution only at leetcode.com

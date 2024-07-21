@@ -5,7 +5,7 @@ using namespace std;
 static int foo() { return 0; }
 
 int main() {
-  int result = foo();
+  cout << foo();
 
   return 0;
 }
