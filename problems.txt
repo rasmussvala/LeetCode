@@ -41,5 +41,7 @@ Problem										Status			Date
 1431. Kids With the Greatest Number of Candies*					Accepted		2024-07-19
 605. Can Place Flowers								Accepted		2024-07-20
 345. Reverse Vowels of a String							Accepted		2024-07-21
+1480. Running Sum of ld Array*							Accepted		2024-07-22
+392. Is Subsequence*								Accepted		2024-07-23
 
 *: Solution only at leetcode.com
