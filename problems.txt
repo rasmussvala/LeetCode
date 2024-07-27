@@ -46,5 +46,6 @@ Problem										Status			Date
 643. Maximum Average Subarray I*						Accepted		2024-07-24
 1281. Subtract the Product and Sum of Digits of an Integer*			Accepted		2024-07-25
 2114. Maximum Number of Words Found in Sentences*				Accepted		2024-07-26
+1207. Unique Number of Occurrences*						Accepted		2024-07-27
 
 *: Solution only at leetcode.com
