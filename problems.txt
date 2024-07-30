@@ -47,6 +47,8 @@ Problem										Status			Date
 1281. Subtract the Product and Sum of Digits of an Integer*			Accepted		2024-07-25
 2114. Maximum Number of Words Found in Sentences*				Accepted		2024-07-26
 1207. Unique Number of Occurrences*						Accepted		2024-07-27
-151. Reverse Words in a String							Accepted		2024-07-28
+2215. Find the Difference of Two Arrays*					Accepted		2024-07-28
+151. Reverse Words in a String							Accepted		2024-07-29
+1732. Find the Hi hest Altitude*						Accepted		2024-07-30
 
 *: Solution only at leetcode.com
