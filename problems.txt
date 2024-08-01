@@ -50,5 +50,7 @@ Problem										Status			Date
 2215. Find the Difference of Two Arrays*					Accepted		2024-07-28
 151. Reverse Words in a String							Accepted		2024-07-29
 1732. Find the Hi hest Altitude*						Accepted		2024-07-30
+206. Reverse Linked List*							Accepted		2024-07-31
+724. Find Pivot Index*								Accepted		2024-08-01
 
 *: Solution only at leetcode.com
