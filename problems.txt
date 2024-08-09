@@ -52,5 +52,6 @@ Problem										Status			Date
 1732. Find the Hi hest Altitude*						Accepted		2024-07-30
 206. Reverse Linked List*							Accepted		2024-07-31
 724. Find Pivot Index*								Accepted		2024-08-01
+104. Maximum Depth of Binary Tree*						Accepted		2024-08-02
 
 *: Solution only at leetcode.com
