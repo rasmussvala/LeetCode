@@ -1,6 +1,12 @@
-﻿static int foo() 
-{ 
-    return 0; 
-}
+﻿public class Program
+{
+    private static int Foo()
+    {
+        return 0;
+    }
 
-Console.WriteLine(foo());
+    private static void Main(string[] args)
+    {
+        Console.WriteLine(Foo());
+    }
+}
